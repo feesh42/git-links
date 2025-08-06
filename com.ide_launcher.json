@@ -1,7 +1,0 @@
-{
-    "name": "com.ide_launcher",
-    "description": "Launch VS Code and checkout a branch",
-    "path": "C:\\Users\\ekl\\Documents\\github-extension\\launcher.exe",
-    "type": "stdio",
-    "allowed_origins": ["chrome-extension://bodclbelgjcmfffacpkhokjajpimnnap/"]
-}

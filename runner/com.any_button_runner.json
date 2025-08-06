@@ -1,0 +1,7 @@
+{
+  "name": "com.any_button_runner",
+  "description": "Launch AnyButton",
+  "path": "C:\\Program Files\\Any Button\\any_button.exe",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://begbpkhegofidiiagmkpbifennmpenhg/"]
+}

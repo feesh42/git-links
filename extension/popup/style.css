@@ -1,0 +1,241 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+}
+body {
+    background: #292a2d;
+    font-family: sans-serif;
+    color: #ffffffaa;
+    user-select: none;
+    margin: 16px;
+}
+body > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#button-list {
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+#import-export-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#import-button {
+    margin-left: auto;
+}
+
+#import-button, #export-button {
+    height: 24px;
+    width: 24px;
+    background: #ffffff00;
+    font-size: 16px;
+    border: unset;
+    transition: all 0.1s ease-in-out;
+    margin-right: 4px;
+    cursor: pointer;
+    filter: grayscale(40%);
+}
+
+ #import-button:hover, #export-button:hover {
+    background: unset;
+    opacity: 1;
+    filter: grayscale(0%);
+ }
+
+#button-list > li {
+    margin-bottom: 8px;
+    list-style: none;
+    padding: 0px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #ffffff84;
+    border: 1px solid #ffffff24;
+    transition: all 0.1s ease-in-out;
+}
+
+#button-list > li:hover {
+    background: #ffffff24;
+    color: #ffffffb9;
+}
+
+#button-list > li > span {
+    width: calc(100% - 12px);
+    display: inline-block;
+}
+
+#create-button {
+    width: 24px;
+    background: #ffffff00;
+    border-radius: 6px;
+    height: 24px;
+    font-size: 18px;
+    font-family: fantasy;
+    line-height: 1px;
+    color: #ffffff84;
+    border: 1px solid #ffffff24;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#create-button:hover {
+    background: #ffffff24;
+    color: #ffffffb9;
+}
+
+#cancel-button, #add-button {
+    background: #ffffff00;
+    border: unset;
+    border-radius: 6px;
+    height: 24px;
+    font-family: system-ui;
+    line-height: 1px;
+    color: #ffffff84;
+    border: 1px solid #ffffff24;
+    transition: all 0.1s ease-in-out;
+    width: 64px;
+
+}
+
+#cancel-button:hover, #add-button:hover {
+    background: #ffffff24;
+    cursor: pointer;
+    color: #ffffffb9;
+}
+
+#create-button-form {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+#create-button-form input, #create-button-form textarea {
+    background: #ffffff00;
+    border-radius: 6px;
+    height: 24px;
+    min-height: 24px;
+    line-height: 1px;
+    font-family: sans-serif;
+    color: #ffffffd1;
+    border: 1px solid #ffffff24;
+    outline: none;
+    padding: 0px 12px;
+}
+
+#create-button-form input:focus, #create-button-form textarea:focus {
+    border-color: #ffffff84;
+}
+
+#create-button-form textarea {
+    line-height: normal;
+    padding: 12px;
+    resize: vertical;
+}
+
+#form-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-bottom: 8px;
+    margin-bottom: -8px;
+}
+
+.input-field {
+    width: calc(100% - 24px);
+    margin-bottom: 8px;
+}
+
+#action-type-container {
+    display: flex;
+    align-items: anchor-center;
+    width: 100%;
+}
+
+#action-type-url {
+    margin-left: auto;
+}
+
+#variables-container {
+    margin-bottom: 8px;
+    max-width: 100%;
+}
+
+#variables-label-container {
+    display: flex;
+    align-items: center;
+}
+
+#variables-label-container > button {
+    margin-top: 2px;
+}
+
+#variables-table input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#remove-row-button, #add-row-button, #edit-button {
+    background: transparent;
+    border: none;
+    color: #848484;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.1s ease-in-out;
+}
+
+#remove-row-button, #edit-button {
+    margin: 0px -12px 0px -6px;
+}
+
+#remove-row-button:hover {
+    color: #fb3838;
+}
+
+#add-row-button:hover {
+    color: #ffffffb9;
+}
+
+#variables-table td:last-child {
+    white-space: nowrap;
+    text-align: center;
+    max-width: 14px;
+}
+
+.tooltip-icon {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip-icon .tooltip {
+    display: none;
+    width: 120px;
+    background-color: #292a2d;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-family: sans-serif;
+    color: #ffffffd1;
+    border: 1px solid #ffffff24;
+    margin: 10px;
+    font-size: 12px;
+    width: 200px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip-icon:hover .tooltip {
+    display: block;
+}
